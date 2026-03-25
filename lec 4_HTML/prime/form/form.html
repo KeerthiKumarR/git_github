@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>By Keerthi Kumar R</h2>
+    <h2>HTML-Only:Application Form</h2>
+    <b>Rules:</b> only valid inputs. All starred fields are required. Read <i>Titles</i> for hints, No JavaScript.
+    <form action="">
+        <fieldset>
+            <legend>Account Information</legend>
+            <label for="username">* Username:</label>
+            <br>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+            <label for="email">* Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="password">* Password:</label>
+            <br>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <select name="Appling as" id="Applying as" required>
+                <option value="" disabled selected>Applying as*</option>
+                <option value="student">Student</option>
+                <option value="instructor">Instructor</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">* Full Name:</label>
+            <br>
+            <input type="text" id="fullname" name="fullname" required>
+            <br><br>
+            <label for="dob">* Date of Birth:</label>
+            <br>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            <label for="gender">* Gender:</label>
+        <br>
+        <label for="Gender"></label>
+        <input type="radio" name="Gender" >Male</label>
+        <input type="radio" name="Gender" >Female</label>
+        <input type="radio" name="Gender" >Other</label>
+            <br><br>
+            <label for="Govt ID (PAN format)">Govt ID (PAN format):</label>
+            <br>
+            <input type="text" id="Govt ID (PAN format)" name="Govt ID (PAN format)" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Contact & Address</legend>
+            <label for="phone">* Phone Number:</label>
+            <br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            <br><br>
+            <label for="Email">* Email:</label>
+            <br>
+            <input type="email" id="Email" name="Email" required>
+            <br><br>
+            <label for ="Portfolio URL">Portfolio URL(HTTPS only):</label>
+            <br>
+            <input type="url" id="Portfolio URL" name="Portfolio URL" required>
+            <br><br>
+            <label for="country">* Country:</label>
+            <br>
+            <input type="text" id="country" name="country" required>
+            <br><br>
+            <label for ="state">State/UT India:</label>
+            <br>
+            <input type="text" id="state" name="state" required>
+            <br><br>
+            <label for="PIN Code">PIN Code:</label>
+            <br>
+            <input type="text" id="PIN Code" name="PIN Code" pattern="[0-9]{6}" required>
+            <br><br>
+            <label for="Address">Address:</label>
+            <br>
+            <textarea id="Address" name="Address" rows="4" cols="50"></textarea>
+        </fieldset> 
+        <br>
+        <fieldset>
+            <legend>Educational and Skill</legend>
+            <label for="Highest Qualification">* Highest Qualification:</label>
+            <br>
+            <select name="Highest Qualification" id="Highest Qualification" required>
+                <option value="" disabled selected>Highest Qualification*</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="Postgraduate">Postgraduate</option>
+            </select>
+            <br><br>
+            <label for ="CGPA(1-10)">* CGPA (1-10):</label>
+            <br>
+            <input type="number" id="CGPA(1-10)" name="CGPA(1-10)" min="1" max="10" step="1" required>  
+            <br><br>
+            <label for="Primary Skill">* Primary Skill:</label>
+            <br><br>
+            <select name="Primary Skill" id="Primary Skill" required>
+                <option value="" disabled selected>Primary Skill*</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>  
+                </select>
+            <br><br>
+            Other Skills(choose Multiple):
+            <br><br>
+            <input type="checkbox" id="Skill1" name="Other Skills" value="Skill1">
+            <label for="Skill1">HTML</label>
+            <br>
+            <input type="checkbox" id="Skill2" name="Other Skills" value="Skill2">
+            <label for="Skill2">CSS</label>
+            <br>
+            <input type="checkbox" id="Skill3" name="Other Skills" value="Skill3">
+            <label for="Skill3">Node.js</label>
+            <br>
+            <input type="checkbox" id="Skill4" name="Other Skills" value="Skill4">
+            <label for="Skill4">Express.js</label>
+            <br>
+            <label for="Quick add via datalist">Quick add via datalist:</label>
+            <br><br>
+           <input type="text" id="Quick add via datalist" name="Quick add via datalist">
+           <datalist id="Skills">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="Node.js">
+            <option value="Express.js">
+           </datalist>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Availability and Preferences</legend>
+            <label for="Earlist start date">* Earlist start date:</label>
+            <br>
+            <input type="date" id="Earlist start date" name="Earlist start date" required>
+            <br><br>
+            <label for="Preferred Interview Time">Preferred Interview Time:</label>
+            <br>
+            <input type="time" id="Preferred Interview Time" name="Preferred Interview Time" required>
+            <br><br>
+            <label for = "Time Zone">Time Zone:</label>
+            <br>
+            <select name="Time Zone" id="Time Zone" required>
+                <option value="" disabled selected>Time Zone*</option>
+                <option value="IST">IST (Indian Standard Time)</option>
+                <option value="UTC">UTC (Coordinated Universal Time)</option>
+                <option value="EST">EST (Eastern Standard Time)</option>
+                <option value="PST">PST (Pacific Standard Time)</option>
+            </select>
+            <br><br>
+            <label for="Brand Color Preference">Brand Color Preference:</label>
+            <br>
+            <input type="color" id="Brand Color Preference" name="Brand Color Preference" required>
+            <label for ="Expected CTC (Lakhs/Year)">* Expected CTC (Lakhs/Year):</label>
+            <h4>(we know you want 50lpa😏)</h4>
+            <label for="my-slider">CTC Range:</label>
+            <input type="range" id="my-slider" name="volume" min="0.1" max="10" step="0.1">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Documents</legend>
+            <label for="Upload Resume (PDF)">* Upload Resume (PDF):</label>
+            <br>
+            <input type="file" id="Upload Resume (PDF)" name="Upload Resume (PDF)" accept=".pdf" required>
+            <br><br>
+            <label for="Profile Photo (JPG/PNG)">* Profile Photo (JPG/PNG):</label>
+            <br>
+            <input type="file" id="Profile Photo (JPG/PNG)" name="Profile Photo (JPG/PNG)" accept=".jpg, .jpeg, .png" required> 
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Short Answers</legend>
+            <label for="Why should we consider you?">* Why should we consider you?</label>
+            <br>
+            <textarea id="Why should we consider you?" name="Why should we consider you?" rows="4" required></textarea>
+            <br><br>
+            <label for="Referral Code (Pattern: ABC-1234)">Referral Code (Pattern: ABC-1234):</label>
+            <br>
+            <input type="text" id="Referral Code (Pattern: ABC-1234)" name="Referral Code (Pattern: ABC-1234)" pattern="[A-Z]{3}-[0-9]{4}" placeholder="ABC-1234">
+        </fieldset>
+        <br><br>
+        Optional Survey(Expand it):
+        <details>
+  <summary>Click to Expand</summary>
+        How did you hear about us?
+        <br>    
+  <input type="checkbox" id="Skill1" name="Other Skills" value="Skill1">
+            <label for="Skill1">Youtube</label>
+            <input type="checkbox" id="Skill2" name="Other Skills" value="Skill2">
+            <label for="Skill2">Website</label>
+            <input type="checkbox" id="Skill1" name="Other Skills" value="Skill1">
+            <label for="Skill1">Instagram</label>
+            <input type="checkbox" id="Skill1" name="Other Skills" value="Skill1">
+            <label for="Skill1">Facebook</label><input type="checkbox" id="Skill1" name="Other Skills" value="Skill1">
+            <label for="Skill1">From Friends</label><input type="checkbox" id="Skill1" name="Other Skills" value="Skill1">
+            <label for="Skill1">Others</label>
+</details>
+        <br>
+        <input type="checkbox" id="Skill1" name="Other Skills" value="Skill1">
+            <label for="Skill1">* I Confirm all information is accurate and I accept the terms and conditions</label>
+            <br><br>
+             <button type="submit" value="Submit">Submit Application</button>
+            <button type="reset" value="Reset">Reset</button>
+    </form>
+</body>
+</html>
